@@ -1,4 +1,4 @@
-- 1v1.LOL 3kh0_files
+- 1v1.LOL
 - 2020-game
 - 2048-multitask
 - Territorial.io

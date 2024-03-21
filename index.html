@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus</title>
+<style>
+    .game-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .game-card {
+        position: relative;
+        width: 200px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .game-card:hover {
+        transform: scale(1.1);
+    }
+
+    .game-image {
+        width: 100%;
+        height: 100px; /* Adjust the height as needed */
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .game-name {
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 0 0 10px 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="game-container">
+    <!-- Game Cards -->
+    <div class="game-card">
+        <img class="game-image" src="/images/backrooms" alt="Backrooms">
+        <div class="game-name"><a href="/games/backrooms">Backrooms</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/bad-ice-cream-2" alt="Bad Ice Cream 2">
+        <div class="game-name"><a href="/games/bad-ice-cream-2">Bad Ice Cream 2</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/bad-ice-cream-3" alt="Bad Ice Cream 3">
+        <div class="game-name"><a href="/games/bad-ice-cream-3">Bad Ice Cream 3</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/baldis-basics" alt="Baldis Basics">
+        <div class="game-name"><a href="/games/baldis-basics">Baldis Basics</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/basketball-legends-2020" alt="Basketball Legends 2020">
+        <div class="game-name"><a href="/games/basketball-legends-2020">Basketball Legends 2020</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/basketbros" alt="Basketbros">
+        <div class="game-name"><a href="/games/basketbros">Basketbros</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/basketrandom" alt="Basketrandom">
+        <div class="game-name"><a href="/games/basketrandom">Basketrandom</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/battleforgondor" alt="Battle for Gondor">
+        <div class="game-name"><a href="/games/battleforgondor">Battle for Gondor</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/bigredbutton" alt="Big Red Button">
+        <div class="game-name"><a href="/games/bigredbutton">Big Red Button</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/blacholesquare" alt="Blachole Square">
+        <div class="game-name"><a href="/games/blacholesquare">Blachole Square</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/bloxors" alt="Bloxors">
+        <div class="game-name"><a href="/games/bloxors">Bloxors</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/breakingthebank" alt="Breaking the Bank">
+        <div class="game-name"><a href="/games/breakingthebank">Breaking the Bank</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/breakout" alt="Breakout">
+        <div class="game-name"><a href="/games/breakout">Breakout</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/btd3" alt="Bloons Tower Defense 3">
+        <div class="game-name"><a href="/games/btd3">Bloons Tower Defense 3</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/btd4" alt="Bloons Tower Defense 4">
+        <div class="game-name"><a href="/games/btd4">Bloons Tower Defense 4</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/btd5" alt="Bloons Tower Defense 5">
+        <div class="game-name"><a href="/games/btd5">Bloons Tower Defense 5</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/btts" alt="BTTS">
+        <div class="game-name"><a href="/games/btts">BTTS</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/cars-simulator" alt="Cars Simulator">
+        <div class="game-name"><a href="/games/cars-simulator">Cars Simulator</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/cat-ninja" alt="Cat Ninja">
+        <div class="game-name"><a href="/games/cat-ninja">Cat Ninja</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/chromedino" alt="Chrome Dino">
+        <div class="game-name"><a href="/games/chromedino">Chrome Dino</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/cookie-clicker" alt="Cookie Clicker">
+        <div class="game-name"><a href="/games/cookie-clicker">Cookie Clicker</a></div>
+    </div>
+   
+    <div class="game-card">
+        <img class="game-image" src="/images/core-ball" alt="Core Ball">
+        <div class="game-name"><a href="/games/core-ball">Core Ball</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/crossyroad" alt="Crossy Road">
+        <div class="game-name"><a href="/games/crossyroad">Crossy Road</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/csgo-clicker" alt="CSGO Clicker">
+        <div class="game-name"><a href="/games/csgo-clicker">CSGO Clicker</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/draw-the-hill" alt="Draw The Hill">
+        <div class="game-name"><a href="/games/draw-the-hill">Draw The Hill</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/edge-surf" alt="Edge Surf">
+        <div class="game-name"><a href="/games/edge-surf">Edge Surf</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/emulator-js" alt="Emulator JS">
+        <div class="game-name"><a href="/games/emulator-js">Emulator JS</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/hackertype" alt="Hacker Type">
+        <div class="game-name"><a href="/games/hackertype">Hacker Type</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/learntofly2" alt="Learn To Fly 2">
+        <div class="game-name"><a href="/games/learntofly2">Learn To Fly 2</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/monkeymart" alt="Monkey Mart">
+        <div class="game-name"><a href="/games/monkeymart">Monkey Mart</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/n-gon" alt="N-Gon">
+        <div class="game-name"><a href="/games/n-gon">N-Gon</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/ninja" alt="Ninja">
+        <div class="game-name"><a href="/games/ninja">Ninja</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/papas-pancakeria" alt="Papas Pancakeria">
+        <div class="game-name"><a href="/games/papas-pancakeria">Papas Pancakeria</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/retro-bowl" alt="Retro Bowl">
+        <div class="game-name"><a href="/games/retro-bowl">Retro Bowl</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/time-shooter-3" alt="Time Shooter 3">
+        <div class="game-name"><a href="/games/time-shooter-3">Time Shooter 3</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex-6" alt="Vex 6">
+        <div class="game-name"><a href="/games/vex-6">Vex 6</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex" alt="Vex">
+        <div class="game-name"><a href="/games/vex">Vex</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex2" alt="Vex 2">
+        <div class="game-name"><a href="/games/vex2">Vex 2</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex3" alt="Vex 3">
+        <div class="game-name"><a href="/games/vex3">Vex 3</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex4" alt="Vex 4">
+        <div class="game-name"><a href="/games/vex4">Vex 4</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex5" alt="Vex 5">
+        <div class="game-name"><a href="/games/vex5">Vex 5</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex6" alt="Vex 6">
+        <div class="game-name"><a href="/games/vex6">Vex 6</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex7" alt="Vex 7">
+        <div class="game-name"><a href="/games/vex7">Vex 7</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/vex8" alt="Vex 8">
+        <div class="game-name"><a href="/games/vex8">Vex 8</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/volleyrandom" alt="Volleyrandom">
+        <div class="game-name"><a href="/games/volleyrandom">Volleyrandom</a></div>
+    </div>
+    <div class="game-card">
+        <img class="game-image" src="/images/worlds-hardest-game-2" alt="Worlds Hardest Game 2">
+        <div class="game-name"><a href="/games/worlds-hardest-game-2">Worlds Hardest Game 2</a></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+  
+<style>
+.button{
+opacity:0.75;
+border-radius:75%;
+background-color:black;
+z-index: 1;
+position:absolute;
+left:95%;
+width:5%;
+height:9%;
+
+}
+.button:hover{
+opacity:0.5;  
+}  
+.refresh-button{
+ display:flex;
+ transition:transform 1s;
+position:absolute;
+left:95%;
+top:10%;
+opacity:0.75;  
+} 
+.refresh-button:hover{
+  transform: rotate(359deg);
+  display:flex;
+  opacity:0.5;
+</style>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bloons Tower Defence</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    
+    <div
+      id="container"
+      style="position: absolute; width: auto; height: auto; inset: 0"
+    ></div>
+    <script src="../ruffle/ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("vex-3.swf");
+        
+      });
+    </script>
+     <body> 
+      <a href="https://hyperspace-x-beta.github.io/games.html"><img src="https://hyperspace-x-beta.github.io/images/home.png"  class=button id=button ></a>
+       <img  width="5%" height="9%"  style=" border-radius:75%; z-index: 1; background-color:black; Padding:none; border:none; cursor:pointer;  "  id="refresh-button" class="refresh-button" src="https://hyperspace-x-beta.github.io/images/Reload.png" ="refresh-button">
+     
+       <script>
+    
+        const refreshButton = document.querySelector('.refresh-button');
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener('click', refreshPage)
+      </script>  
+</body>  
+  </body>
+</html>

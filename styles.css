@@ -1,14 +1,12 @@
-/* Game list container */
 .game-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Increased gap between game cards */
+  gap: 20px;
 }
 
-/* Individual game card */
 .game-card {
-  width: calc(100% / 7 - 20px); /* Adjusted width for each card with gap */
+  width: calc(100% / 7 - 20px);
   height: 150px;
   border-radius: 5px;
   overflow: hidden;
@@ -22,13 +20,11 @@
   cursor: pointer;
 }
 
-/* Add hover effect to entire .game-card */
 .game-card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 
-/* Styling for game links */
 .game-card a {
   color: #333;
   text-decoration: none;
@@ -40,15 +36,55 @@
   width: 100%;
 }
 
-/* Styling for game images */
 .game-image {
   width: 100%;
   height: auto;
 }
 
-/* Styling for game names */
 .game-name {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .game-card {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .game-card {
+    width: calc(100% / 4 - 20px);
+  }
+
+  .game-list {
+    justify-content: space-between;
+  }
+
+  .game-list:nth-child(2n) {
+    justify-content: flex-start;
+  }
+
+  .game-list:nth-child(2n+1) {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-card {
+    width: calc(100% / 7 - 20px);
+  }
+
+  .game-list {
+    justify-content: space-between;
+  }
+
+  .game-list:nth-child(2n) {
+    justify-content: flex-start;
+  }
+
+  .game-list:nth-child(2n+1) {
+    justify-content: flex-end;
+  }
 }

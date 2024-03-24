@@ -81,10 +81,10 @@
   }
 
   .game-list:nth-child(2n) {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .game-list:nth-child(2n+1) {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }

@@ -1,3 +1,4 @@
+/* Game list container */
 .game-list {
   display: flex;
   flex-wrap: wrap;
@@ -5,20 +6,29 @@
   gap: 10px;
 }
 
+/* Individual game card */
 .game-card {
-  width: calc(100%/7 - 10px);
+  width: calc(100% / 7 - 10px); /* Adjusted width */
   height: 150px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform .3s;
+  transition: transform .3s, box-shadow .3s; /* Added box-shadow transition */
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Adjusted to column layout */
+  align-items: center; /* Center align content */
   justify-content: center;
   text-align: center;
-  width: 120px;
+  cursor: pointer; /* Added cursor pointer */
 }
 
+/* Add hover effect to entire .game-card */
+.game-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow */
+  transform: translateY(-5px);
+}
+
+/* Styling for game links */
 .game-card a {
   color: #333;
   text-decoration: none;
@@ -30,11 +40,13 @@
   width: 100%;
 }
 
+/* Styling for game images */
 .game-image {
   width: 100%;
   height: auto;
 }
 
+/* Styling for game names */
 .game-name {
   margin-top: 10px;
   font-size: 18px;

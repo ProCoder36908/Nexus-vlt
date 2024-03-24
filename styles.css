@@ -3,28 +3,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px; /* Increased gap between game cards */
 }
 
 /* Individual game card */
 .game-card {
-  width: calc(100% / 7 - 10px); /* Adjusted width */
+  width: calc(100% / 7 - 20px); /* Adjusted width for each card with gap */
   height: 150px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform .3s, box-shadow .3s; /* Added box-shadow transition */
+  transition: transform .3s, box-shadow .3s;
   display: flex;
-  flex-direction: column; /* Adjusted to column layout */
-  align-items: center; /* Center align content */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  cursor: pointer; /* Added cursor pointer */
+  cursor: pointer;
 }
 
 /* Add hover effect to entire .game-card */
 .game-card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 

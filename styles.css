@@ -1,7 +1,7 @@
 .game-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -59,7 +59,7 @@
   }
 
   .game-list {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .game-list:nth-child(2n) {
@@ -77,7 +77,7 @@
   }
 
   .game-list {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .game-list:nth-child(2n) {
